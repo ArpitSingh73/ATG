@@ -1,13 +1,122 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+body {
+  margin: 0;
+  font-family: var(--bs-body-font-family);
+  font-size: var(--bs-body-font-size);
+  font-weight: var(--bs-body-font-weight);
+  line-height: var(--bs-body-line-height);
+  color: var(--bs-body-color);
+  text-align: var(--bs-body-text-align);
+  background-color: var(--bs-body-bg);
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  z-index: 1;
+  overflow-x: hidden;
+}
+
+.header-container {
+  justify-content: center;
+  padding: 10px;
+  box-shadow: rgb(0, 0, 0, 0.12);
+  display: flex;
+}
+
+.header-img {
+  flex: 1;
+  overflow: hidden;
+  padding: 16px;
+  margin: 0px 26px;
+}
+
+.search-img {
+  border: none !important;
+  padding: none;
+}
+
+.header-img img {
+  overflow: clip;
+}
+
+.header-form {
+  flex: 1;
+}
+
+.header-form input {
+  background-color: #f2f2f2;
+}
+
+.header-button {
+  flex: 1;
+  color: #2e2e2e;
+  text-align: right;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.container1 img {
+  width: 100vw;
+  object-fit: fill;
+}
+
+.container1-text {
+  margin-top: 325px;
+  margin-left: 10px;
+  font-size: 1.5rem;
+}
+
+.imagePost {
+  height: 220px;
+  width: 100%;
+  border-radius: 4px 4px 0 0;
+  background-color: #c4c4c4;
+}
+
+.custom-bg-container img {
+  width: 100%;
+}
+
+.custom-input {
+  border-radius: 2px 2px 0 0;
+  border: 1px solid #d9d9db;
+  background: #f7f8fa;
+}
+
+.modal-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: var(--bs-modal-color);
+  pointer-events: auto;
+  background-color: var(--bs-modal-bg);
+  background-clip: padding-box;
+  border: var(--bs-modal-border-width) solid var(--bs-modal-border-color);
+  border-radius: var(--bs-modal-border-radius);
+  outline: 0;
+}
+
+.create-account {
+  border: 1px solid black;
+  margin: auto;
+}
+
+#create-form {
+  display: none;
+  z-index: 2;
+  background-color: white;
 }

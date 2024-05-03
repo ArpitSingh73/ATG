@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from './components/navbar/Navbar';
+import Category from './components/category/Category';
+import Image from './components/image/Image';
+import Post from './components/post/Post';
+import Sidebar from './components/sidebar/Sidebar';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar></Navbar>
+      <Image></Image>
+      <Category></Category>
+      <div
+        className="mx-auto d-flex gap-5 justify-content-center"
+        style={{ "max-width": "1040px" }}
+      >
+        <Post></Post>
+        <Sidebar></Sidebar>
+      </div>
     </div>
   );
 }
